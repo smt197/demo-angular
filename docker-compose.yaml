@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8090:8090"
+      - "8090:80"
     volumes:
       # Optional: If you want to mount your local nginx.conf
       # Make sure to uncomment the COPY line for nginx.conf in your Dockerfile as well.

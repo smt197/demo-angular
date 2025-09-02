@@ -21,8 +21,8 @@ COPY --from=builder /app/dist/vex /usr/share/nginx/html
 # your nginx.conf is in the same directory as your Dockerfile.
 COPY nginx/nginx.conf /etc/nginx/conf.d/default.conf
 
-# Expose port 8090
-EXPOSE 8090
+# Expose port 80
+EXPOSE 80
 
 # Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
